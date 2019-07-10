@@ -19,3 +19,7 @@ https://www.intego.com/mac-security-blog/osx-crescentcore-mac-malware-designed-t
 ****
 **WarZone RAT aka Ave Maria Stealer**  
 http://blog.morphisec.com/threat-alert-ave-maria-infostealer-on-the-rise-with-new-stealthier-delivery
+  
+****
+**Winnti Linux**  
+https://medium.com/chronicle-blog/winnti-more-than-just-windows-and-gates-e4f03436031a
