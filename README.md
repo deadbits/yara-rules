@@ -6,7 +6,7 @@ Collection of YARA signatures from recent malware research
 ## Ruleset
 
 **REMCOS RAT**  
-This signature detects multiple variations of the REMCOS RAT malware that was seen ITW in July 2019.  
+This signature detects multiple variations of the REMCOS RAT malware that was seen ITW in June & July 2019.  
 The rule is a modified version of a recent ruleset by Florian Roth; where his ruleset contained several rules for each REMCOS component or variant, this rule is designed for broad detection of REMCOS in general - regardless of the variant. If you do care more about granular detection, you can reference the rules variable names as each variant uses its own YARA strings variables.
   
 https://exchange.xforce.ibmcloud.com/collection/Remcos-Rat-Delivered-via-Email-Campaign-056f98e4fc97bd142337d6b2271aeaa7
