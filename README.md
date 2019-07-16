@@ -5,6 +5,13 @@ Collection of YARA signatures from recent malware research
 
 ## Ruleset
 
+
+**TA505 FlowerPippi**  
+This signature detects the FlowerPippi backdoor used by TA505 in spam email campaigns seen in the wild in June & July 2019.
+  
+https://blog.trendmicro.com/trendlabs-security-intelligence/latest-spam-campaigns-from-ta505-now-using-new-malware-tools-gelup-and-flowerpippi/
+  
+****
 **REMCOS RAT**  
 This signature detects multiple variations of the REMCOS RAT malware that was seen ITW in June & July 2019.  
 The rule is a modified version of a recent ruleset by Florian Roth; where his ruleset contained several rules for each REMCOS component or variant, this rule is designed for broad detection of REMCOS in general - regardless of the variant. If you do care more about granular detection, you can reference the rules variable names as each variant uses its own YARA strings variables.
