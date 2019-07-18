@@ -2,8 +2,7 @@ rule GodLua_Linux: linuxmalware
 {
    meta:
       Author = "Adam M. Swanda"
-     Source = "https://github.com/deadbits/yara-rules"
-     Website = "https://www.deadbits.org"
+      Team = "Threat Hunting and Intelligence"
 
    strings:
 

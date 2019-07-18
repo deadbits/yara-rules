@@ -1,12 +1,8 @@
 rule TA505_FlowerPippi: TA505 financial backdoor winmalware
 {
    meta:
-
-      Author = "Adam M. Swanda"
-      Description = "Detects the TA505 backdoor FlowerPippi used in June/July email spam campaigns."
-      Reference = "https://blog.trendmicro.com/trendlabs-security-intelligence/latest-spam-campaigns-from-ta505-now-using-new-malware-tools-gelup-and-flowerpippi/"
-      Website = "https://www.deadbits.org"
-      Repo = "https://github.com/deadbits/yara-rules"
+     Author = "Adam M. Swanda"
+      Team = "Threat Hunting and Intelligence"
 
    strings:
 

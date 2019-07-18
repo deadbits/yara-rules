@@ -35,7 +35,7 @@ rule REMCOS_RAT_variants: remcos rat winmalware
         $str_a3 = "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWOR" ascii
         $str_a4 = "/k %windir%\\System32\\reg.exe ADD HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System /v EnableLUA /t REG_DWOR" ascii
         $str_a5 = "\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data" ascii fullword
-        
+
         $str_b1 = "CreateObject(\"Scripting.FileSystemObject\").DeleteFile(Wscript.ScriptFullName)" wide fullword
         $str_b2 = "Executing file: " ascii fullword
         $str_b3 = "GetDirectListeningPort" ascii fullword
@@ -56,7 +56,7 @@ rule REMCOS_RAT_variants: remcos rat winmalware
         $str_b18 = "Uploaded file: " ascii fullword
         $str_b19 = "Unable to delete: " ascii fullword
         $str_b20 = "while fso.FileExists(\"" wide fullword
-        
+
         $str_c0 = "[Firefox StoredLogins not found]" ascii fullword
         $str_c1 = "Software\\Classes\\mscfile\\shell\\open\\command" ascii fullword
         $str_c2 = "[Chrome StoredLogins found, cleared!]" ascii fullword
@@ -77,12 +77,12 @@ rule REMCOS_RAT_variants: remcos rat winmalware
         uint16(0) == 0x5a4d and filesize < 600KB
         and
         (
-            (8 of ($funcs*) or (all of $funcs*))
-             or
-             ((1 of ($str_a*) and 4 of them) or  all of ($str_a*))
-             or
-             (8 of ($str_b*) or (all of $str_b*))
-             or
-         all of ($str_c*)
+            ((8 of ($funcs*)) or all of ($funcs*))
+            or
+            ((1 of ($str_a*) and 4 of them) or all of ($str_a*))
+            or
+            ((8 of ($str_b*)) or all of ($str_b*))
+            or
+            all of ($str_c*)
          )
 }

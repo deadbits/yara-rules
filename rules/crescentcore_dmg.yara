@@ -3,8 +3,7 @@ rule CrescentCore_DMG: installer macosmalware
 
     meta:
         Author = "Adam M. Swanda"
-        Source = "https://github.com/deadbits/yara-rules"
-        Website = "https://www.deadbits.org"
+        Team = "Threat Hunting and Intelligence"
 
    strings:
       $header0 = "__PAGEZERO" ascii
@@ -32,11 +31,11 @@ rule CrescentCore_DMG: installer macosmalware
 
    condition:
       (
-            uint32(0) == 0xfeedface or
-            uint32(0) == 0xcefaedfe or
-            uint32(0) == 0xfeedfacf or
-            uint32(0) == 0xcffaedfe or
-            uint32(0) == 0xbebafeca
+        uint32(0) == 0xfeedface or
+        uint32(0) == 0xcefaedfe or
+        uint32(0) == 0xfeedfacf or
+        uint32(0) == 0xcffaedfe or
+        uint32(0) == 0xbebafeca
       ) and $header0 and $header1
       and
       (

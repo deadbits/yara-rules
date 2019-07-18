@@ -1,10 +1,9 @@
 rule WarZone_AveMariaStealer: avemaria warzone winmalware
 {
 
-   meta:
+    meta:
       Author = "Adam M. Swanda"
-      Source = "https://github.com/deadbits/yara-rules"
-      Website = "https://www.deadbits.org"
+      Team = "Threat Hunting and Intelligence"
 
    strings:
       $str1 = "cmd.exe /C ping 1.2.3.4 -n 2 -w 1000 > Nul & Del /f /q " ascii fullword

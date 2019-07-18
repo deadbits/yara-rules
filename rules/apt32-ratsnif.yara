@@ -2,8 +2,7 @@ rule APT32_Ratsnif: apt32 winmalware
 {
     meta:
         Author = "Adam M. Swanda"
-        Source = "https://github.com/deadbits/yara-rules"
-        Website = "https://www.deadbits.org"
+        Team = "Threat Hunting and Intelligence"
 
     strings:
         $pdb0 = "X:\\Project\\BotFrame\\Debug\\Client.pdb" ascii fullword

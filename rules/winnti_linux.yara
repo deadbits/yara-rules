@@ -1,10 +1,9 @@
 rule Winnti_Linux: linuxmalware
 {
    meta:
-      Author = "Adam Swanda"
-      Source = "https://github.com/deadbits/yara-rules"
-      Website = "https://www.deadbits.org"
-   
+      Author = "Adam M. Swanda"
+      Team = "Threat Hunting and Intelligence"
+
    strings:
       $str0 = "HIDE_THIS_SHELL=x"
       $str1 = "/usr/sbin/dmidecode  | grep -i 'UUID' |cut -d' ' -f2 2>/dev/null" ascii fullword
@@ -30,7 +29,7 @@ rule Winnti_Linux: linuxmalware
       $str21 = "/lib/libxselinux" ascii fullword
 
     condition:
-      uint16(0) == 0x457f 
+      uint16(0) == 0x457f
       and
       8 of them
 }
