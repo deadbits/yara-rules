@@ -5,6 +5,11 @@ Collection of YARA signatures from recent malware research
 
 ## Ruleset
 
+**SilentTrinity**  
+- https://countercept.com/blog/hunting-for-silenttrinity/
+
+  
+****
 **DNSpionage**  
 - https://blog.talosintelligence.com/2019/04/dnspionage-brings-out-karkoff.html
 - https://blog.talosintelligence.com/2018/11/dnspionage-campaign-targets-middle-east.html
