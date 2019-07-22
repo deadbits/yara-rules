@@ -5,6 +5,11 @@ Collection of YARA signatures from recent malware research
 
 ## Ruleset
 
+**WatchDog Linux botnet**
+- https://twitter.com/polarply/status/1153232987762376704
+- https://www.alibabacloud.com/blog/return-of-watchbog-exploiting-jenkins-cve-2018-1000861_594798
+
+****
 **EvilGnome Linux malware**
 - https://www.intezer.com/blog-evilgnome-rare-malware-spying-on-linux-desktop-users/
 
