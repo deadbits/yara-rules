@@ -5,7 +5,7 @@ Collection of YARA signatures from recent malware research
 
 ## Ruleset
 
-**EvilGnome Linux malware**.
+**EvilGnome Linux malware**
 - https://www.intezer.com/blog-evilgnome-rare-malware-spying-on-linux-desktop-users/
 
 ****
@@ -17,11 +17,11 @@ Collection of YARA signatures from recent malware research
 - https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html
 
 ****
-**APT34 VALUEVAULT**.
+**APT34 VALUEVAULT**
 - https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html
 
 ****
-**RedGhost Linux tool**.
+**RedGhost Linux tool**
 - https://github.com/d4rk007/RedGhost/blob/master/redghost.sh
 
 ****
@@ -54,6 +54,7 @@ Collection of YARA signatures from recent malware research
 ****
 **OSX/CrescentCore**
 - https://www.intego.com/mac-security-blog/osx-crescentcore-mac-malware-designed-to-evade-antivirus/
+
 side note: _when will we all decide to change mac sig names to macOS/<malware>? its way past time, imho_
 
 ****
@@ -61,5 +62,5 @@ side note: _when will we all decide to change mac sig names to macOS/<malware>? 
 - http://blog.morphisec.com/threat-alert-ave-maria-infostealer-on-the-rise-with-new-stealthier-delivery
 
 ****
-**Winnti Linux**
-https://medium.com/chronicle-blog/winnti-more-than-just-windows-and-gates-e4f03436031a
+**Winnti Linux**.
+- https://medium.com/chronicle-blog/winnti-more-than-just-windows-and-gates-e4f03436031a
