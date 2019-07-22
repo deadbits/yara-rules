@@ -3,8 +3,9 @@ rule REMCOS_RAT_variants: remcos rat winmalware
     meta:
 
         Author = "Adam M. Swanda"
-        Repo = "https://github.com/deadbits/yara-rules"
         Website = "https://www.deadbits.org"
+        Repo = "https://github.com/deadbits/yara-rules"
+        Date = "2019-07-18"
         Description = "Detects multiple variants of REMCOS seen in the wild. Created by modifying and combining several of Florian's recent REMCOS ruleset. This rule aims for broader detection than the original ruleset, which used separate rules for each variant. If you do decide to break it into individual rules, the YARA strings variable names are grouped by the REMCOS variant type."
 
     strings:

@@ -2,7 +2,9 @@ rule Winnti_Linux: linuxmalware
 {
    meta:
       Author = "Adam M. Swanda"
-      Team = "Threat Hunting and Intelligence"
+      Website = "https://www.deadbits.org"
+      Repo = "https://github.com/deadbits/yara-rules"
+      Date = "2019-07-18"
 
    strings:
       $str0 = "HIDE_THIS_SHELL=x"

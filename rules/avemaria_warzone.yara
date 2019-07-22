@@ -3,7 +3,9 @@ rule WarZone_AveMariaStealer: avemaria warzone winmalware
 
     meta:
       Author = "Adam M. Swanda"
-      Team = "Threat Hunting and Intelligence"
+      Website = "https://www.deadbits.org"
+      Repo = "https://github.com/deadbits/yara-rules"
+      Date = "2019-07-18"
 
    strings:
       $str1 = "cmd.exe /C ping 1.2.3.4 -n 2 -w 1000 > Nul & Del /f /q " ascii fullword

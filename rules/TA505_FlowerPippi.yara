@@ -1,8 +1,10 @@
 rule TA505_FlowerPippi: TA505 financial backdoor winmalware
 {
    meta:
-     Author = "Adam M. Swanda"
-      Team = "Threat Hunting and Intelligence"
+      Author = "Adam M. Swanda"
+      Website = "https://www.deadbits.org"
+      Repo = "https://github.com/deadbits/yara-rules"
+      Date = "2019-07-18"
 
    strings:
 
