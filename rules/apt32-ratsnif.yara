@@ -1,4 +1,4 @@
-rule APT32_Ratsnif: apt32 winmalware
+rule APT32_Ratsnif: apt32 trojan winmalware
 {
     meta:
         Author = "Adam M. Swanda"
