@@ -5,7 +5,10 @@ Collection of YARA signatures from recent malware research
 
 ## Ruleset
 
-**WatchDog Linux botnet**
+**KPOT v2**
+- https://www.proofpoint.com/us/threat-insight/post/new-kpot-v20-stealer-brings-zero-persistence-and-memory-features-silently-steal
+
+**WatchBog Linux botnet**
 - https://twitter.com/polarply/status/1153232987762376704
 - https://www.alibabacloud.com/blog/return-of-watchbog-exploiting-jenkins-cve-2018-1000861_594798
 
