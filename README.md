@@ -40,8 +40,8 @@ Collection of YARA signatures from recent malware research
 
 ****
 **SilentTrinity**  
-- [SilentTrinity_Payload.rule](https://raw.githubusercontent.com/deadbits/yara-rules/master/rules/SilentTrinity_Payload.yara)
-- [SilentTrinity_Deliver.rule](https://raw.githubusercontent.com/deadbits/yara-rules/master/rules/SilentTrinity_Deliver.yara)
+- Rule: [SilentTrinity_Payload.rule](https://raw.githubusercontent.com/deadbits/yara-rules/master/rules/SilentTrinity_Payload.yara)
+- Rule: [SilentTrinity_Delivery.rule](https://raw.githubusercontent.com/deadbits/yara-rules/master/rules/SilentTrinity_Delivery.yara)
 - Reference: https://countercept.com/blog/hunting-for-silenttrinity/
 
 
