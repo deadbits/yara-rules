@@ -10,8 +10,12 @@ rule APT34_VALUEVAULT: apt34 infostealer winmalware
         $powershell = "New-Object -ComObject Shell.Application" ascii
 
         $gobuild = "Go build ID: " ascii
-        $gopaths = /C:/Users/rick/Desktop/projects/go/src/browsers-password-cracker/(\w+|\w+_\w+)?(\w+\s\w+\s\w+)?\.go/i ascii
-        // main.go, mozilla.go, ie.go, etc etc...
+
+        $gopath01 = "browsers-password-cracker" ascii nocase
+        $gopath02 = "main.go" ascii nocase
+        $gopath03 = "mozilla.go" ascii nocase
+        $gopath04 = "ie.go" ascii nocase
+        // main.go, mozilla.go, ie.go, etc etc... this should probably be a regex but this works too i guess :|
 
         // some function names
         str1 = "main.Decrypt" ascii fullword
@@ -29,6 +33,7 @@ rule APT34_VALUEVAULT: apt34 infostealer winmalware
         str14 = "main.main" ascii fullword
         str15 = "main.DecryptAESFromBase64" ascii fullword
         str16 = "main.DecryptAES" ascii fullword
+
         // typo of Mozilla is intentional
         str17 = "main.CrackMozila" ascii fullword
         str18 = "main.decodeLoginData" ascii fullword
@@ -49,8 +54,10 @@ rule APT34_VALUEVAULT: apt34 infostealer winmalware
         uint16(0) == 0x5a4d
         and
         (
-            (10 of ($str*) and #gopaths >= 5)
+            (10 of ($str*) and 3 of ($gopaths*))
             or
             ($fsociety and $powershell and $gobuild)
+            or
+            ($fsociety and 10 of ($str*))
         )
 }
