@@ -1,4 +1,4 @@
-rule WarZone_AveMariaStealer: avemaria warzone winmalware
+rule AveMaria_WarZone: avemaria warzone winmalware infostealer
 {
 
     meta:
