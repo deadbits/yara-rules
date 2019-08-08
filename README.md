@@ -13,6 +13,8 @@ Collection of YARA signatures from recent malware research
 **KPOT v2**  
 - Rule: [KPOT_v2.yara](https://github.com/deadbits/yara-rules/blob/master/rules/KPOT_v2.yara)
 - Reference: https://www.proofpoint.com/us/threat-insight/post/new-kpot-v20-stealer-brings-zero-persistence-and-memory-features-silently-steal
+    
+****
 
 **WatchBog Linux botnet**  
 - Rule: [WatchBog_Linux.yara](https://github.com/deadbits/yara-rules/blob/master/rules/WatchBog_Linux.yara)
