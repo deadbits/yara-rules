@@ -5,10 +5,10 @@ rule RedGhost_Linux: postexploitation linuxmalware
         Author = "Adam M. Swanda"
         Website = "https://www.deadbits.org"
         Repo = "https://github.com/deadbits/yara-rules"
-        Date = "2019-07-20"
+        Date = "2019-08-07"
         Reference = "https://github.com/d4rk007/RedGhost/"
 
-    featureings:
+    strings:
         $name = "[ R E D G H O S T - P O S T  E X P L O I T - T O O L]" ascii
 
         $feature0 = "Payloads" ascii
@@ -32,11 +32,14 @@ rule RedGhost_Linux: postexploitation linuxmalware
         $func7 = "conmethods(){" ascii
         $func8 = "add2sys(){" ascii
 
-        $header = "#!/bin/bash" ascii
+        //$header = "#!/bin/bash" ascii
 
     condition:
-        ($header at 0)
-        and
-        ($name)
-        or (2 of them)
+      // #!/bin/bash header
+      (uint16be(0x0) == 0x2321 and 
+      for any i in (0..64) : (
+          uint16be(i) == 0x2f62 and uint8(i+2) == 0x68
+      ))
+      and
+      ($name or 5 of them)
 }
