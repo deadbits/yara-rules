@@ -5,6 +5,11 @@ Collection of YARA signatures from recent malware research
 
 ## Ruleset
 
+**Unnamed Linux Golang Ransomware**
+- Rule: [Linux_Golang_Ransomware.rule](https://github.com/deadbits/yara-rules/master/rules/Linux_Golang_Ransomware.rule)
+- Reference: Fortinet Blog
+  
+****
 **APT32 KerrDown**  
 - Rule: [APT32_KerrDown.yara](https://github.com/deadbits/yara-rules/blob/master/rules/APT32_KerrDown.yara)
 - Reference: https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
