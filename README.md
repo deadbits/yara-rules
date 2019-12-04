@@ -4,7 +4,11 @@
 Collection of YARA signatures from recent malware research
 
 ## Ruleset
-
+**ACBackdoor - Linux build**
+- Rule: [ACBackdoor_Linux.rule](https://raw.githubusercontent.com/deadbits/yara-rules/master/rules/ACBackdoor_Linux.yara)
+- Reference: [Intezer](https://www.intezer.com/blog-acbackdoor-analysis-of-a-new-multiplatform-backdoor/)
+  
+****
 **Unnamed Linux Golang Ransomware**
 - Rule: [Linux_Golang_Ransomware.rule](https://github.com/deadbits/yara-rules/master/rules/Linux_Golang_Ransomware.rule)
 - Reference: Fortinet Blog
@@ -12,55 +16,56 @@ Collection of YARA signatures from recent malware research
 ****
 **APT32 KerrDown**  
 - Rule: [APT32_KerrDown.yara](https://github.com/deadbits/yara-rules/blob/master/rules/APT32_KerrDown.yara)
-- Reference: https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
+- Reference: (Palo Alto Unit42](https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/)
   
 ****
 **KPOT v2**  
 - Rule: [KPOT_v2.yara](https://github.com/deadbits/yara-rules/blob/master/rules/KPOT_v2.yara)
-- Reference: https://www.proofpoint.com/us/threat-insight/post/new-kpot-v20-stealer-brings-zero-persistence-and-memory-features-silently-steal
+- Reference: (ProofPoint Threat Insight)[https://www.proofpoint.com/us/threat-insight/post/new-kpot-v20-stealer-brings-zero-persistence-and-memory-features-silently-steal]
     
 ****
 
 **WatchBog Linux botnet**  
 - Rule: [WatchBog_Linux.yara](https://github.com/deadbits/yara-rules/blob/master/rules/WatchBog_Linux.yara)
-- References: https://twitter.com/polarply/status/1153232987762376704, https://www.alibabacloud.com/blog/return-of-watchbog-exploiting-jenkins-cve-2018-1000861_594798
+- References: 
+  - https://twitter.com/polarply/status/1153232987762376704
+  - https://www.alibabacloud.com/blog/return-of-watchbog-exploiting-jenkins-cve-2018-1000861_594798
 
 ****
 **EvilGnome Linux malware**  
 - Rule: [EvilGnome_Linux.yara](https://github.com/deadbits/yara-rules/blob/master/rules/EvilGnome_Linux.yara)
-- Reference: https://www.intezer.com/blog-evilgnome-rare-malware-spying-on-linux-desktop-users/
+- Reference: [Intezer](https://www.intezer.com/blog-evilgnome-rare-malware-spying-on-linux-desktop-users/)
 
 ****
 **APT34 PICKPOCKET**  
 - Rule: [APT34_PICKPOCKET.yara](https://github.com/deadbits/yara-rules/blob/master/rules/APT34_PICKPOCKET.yara)
-- Reference: https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html
+- Reference: [FireEye Threat Reseearch](https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html)
 
 ****
 **APT34 LONGWATCH**  
 - Rule: [APT34_LONGWATCH.yara](https://github.com/deadbits/yara-rules/blob/master/rules/APT34_LONGWATCH.yara)
-- Reference: https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html
+- Reference: [FireEye Threat Reseearch](https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html)
 
 ****
 **APT34 VALUEVAULT**  
 - Rule: [APT34_VALUEVAULT.yara](https://github.com/deadbits/yara-rules/blob/master/rules/APT34_VALUEVAULT.yara)
-- Reference: https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html
+- Reference: [FireEye Threat Reseearch](https://www.fireeye.com/blog/threat-research/2019/07/hard-pass-declining-apt34-invite-to-join-their-professional-network.html)
 
 ****
 **RedGhost Linux tool**  
 - Rule: [RedGhost_Linux](https://github.com/deadbits/yara-rules/blob/master/rules/RedGhost_Linux.yara)
-- Reference: https://github.com/d4rk007/RedGhost/blob/master/redghost.sh
+- Reference: [RedGhost Gitub repo](https://github.com/d4rk007/RedGhost/blob/master/redghost.sh)
 
 ****
 **SilentTrinity**  
 - Rule: [SilentTrinity_Payload.rule](https://raw.githubusercontent.com/deadbits/yara-rules/master/rules/SilentTrinity_Payload.yara)
 - Rule: [SilentTrinity_Delivery.rule](https://raw.githubusercontent.com/deadbits/yara-rules/master/rules/SilentTrinity_Delivery.yara)
-- Reference: https://countercept.com/blog/hunting-for-silenttrinity/
-
-
+- Reference: [Countercept](https://countercept.com/blog/hunting-for-silenttrinity/)
+  
 ****
 **DNSpionage**  
 - Rule: [DNSpionage.yara](https://github.com/deadbits/yara-rules/blob/master/rules/DNSpionage.yara)
-- References: https://blog.talosintelligence.com/2019/04/dnspionage-brings-out-karkoff.html, https://blog.talosintelligence.com/2018/11/dnspionage-campaign-targets-middle-east.html
+- References: [Talos Intelligence](https://blog.talosintelligence.com/2019/04/dnspionage-brings-out-karkoff.html), [Talos Intelligence #2](https://blog.talosintelligence.com/2018/11/dnspionage-campaign-targets-middle-east.html)
 
 ****
 
