@@ -1,0 +1,18 @@
+rule Linux_Golang_Ransomware: linux ransomware golang
+{
+    meta:
+        author = "Adam M. Swanda"
+        reference = "https://www.fortinet.com/blog/threat-research/new-golang-ransomware-targeting-linux-systems.html"
+    
+    strings:
+        $str001 = "1) Email: fullofdeep@protonmail.com" ascii fullword
+        $str002 = "https://ipapi.com/json/idna:" ascii
+        $str003 = "%s.encrypted.localhost" ascii
+        $str004 = ".local.onion" ascii
+        $str005 = "DO NOT TRY TO DO SOMETHING TO YOUR FILES YOU WILL BRAKE YOUR DATA" ascii fullword
+        $str006 = "4.We can decrypt few files in quality the evidence that we have the decoder." ascii fullword
+
+    condition:
+        uint32be(0x0) == 0x7f454c46
+        and all of them
+}
