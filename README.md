@@ -5,10 +5,15 @@ Collection of YARA signatures from recent malware research
 
 ## Ruleset
 
+**Dacls Trojan**
+- Rule: [Dacls_Linux.yara](https://github.com/deadbits/yara-rules/blob/master/rules/Dacls_Linux.yara)
+- Rule: [Dacls_Windows.yara](https://github.com/deadbits/yara-rules/blob/master/rules/Dacls_Windows.yara)
+- Reference: https://blog.netlab.360.com/dacls-the-dual-platform-rat/
+
 **APT32 KerrDown**  
 - Rule: [APT32_KerrDown.yara](https://github.com/deadbits/yara-rules/blob/master/rules/APT32_KerrDown.yara)
 - Reference: https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/
-  
+    
 ****
 **KPOT v2**  
 - Rule: [KPOT_v2.yara](https://github.com/deadbits/yara-rules/blob/master/rules/KPOT_v2.yara)
