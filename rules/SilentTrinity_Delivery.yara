@@ -25,6 +25,7 @@ rule SilentTrinity_Delivery_Document
       $s11 = "2. Da biste pogledali dokument, molimo kliknite \"OMOGU" fullword wide
    
    condition:
-      uint16(0) == 0xcfd0 and filesize < 200KB 
-      and (8 of ($s*) or all of them)
+      uint16(0) == 0xcfd0 
+      and filesize < 200KB 
+      and 8 of ($s*)
 }
